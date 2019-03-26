@@ -1,0 +1,23 @@
+.navigation--mobile {
+  width: 100%;
+  background-color: $black;
+  height: 100%;
+  margin-left: auto;
+  padding: 5rem 1rem 1rem 1rem;
+
+  @media screen and (min-width: $tiny) {
+    width: 350px;
+  }
+
+  @media screen and (min-width: $wide) {
+    display: none;
+  }
+}
+
+.navigation--desktop {
+  display: none;
+
+  @media screen and (min-width: $wide) {
+    display: flex;
+  }
+}

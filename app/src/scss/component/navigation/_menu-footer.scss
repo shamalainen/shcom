@@ -1,0 +1,41 @@
+.menu-footer  {
+  padding: 0;
+  list-style: none;
+}
+
+.menu-footer__item {
+  margin-bottom: $gutter;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.menu-footer__link {
+  font-family: $heebo;
+  font-weight: 800;
+  line-height: 100%;
+  position: relative;
+  text-transform: uppercase;
+  color: $white;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0.25rem;
+    width: 0;
+    height: 3px;
+    background-color: $crimson;
+    left: 0;
+    right: 0;
+    transition: width 0.2s ease-in-out;
+  }
+
+  &:hover {
+    color: $crimson;
+
+    &:after {
+      width: 100%;
+    }
+  }
+}

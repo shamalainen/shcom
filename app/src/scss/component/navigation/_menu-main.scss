@@ -1,0 +1,41 @@
+.menu-main {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-main__item {
+  margin-right: $gutter * 1.25;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.menu-main__link {
+  @include font-size(14px);
+  text-transform: uppercase;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -0.15rem;
+    width: 0;
+    height: 1px;
+    background-color: $crimson;
+    left: 0;
+    right: 0;
+    transition: width 0.2s ease-in-out;
+  }
+
+  &:hover {
+    color: $crimson;
+
+    &:after {
+      width: 100%;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 body {
   @include font-size($base-font-size, $base-font-size-mobile);
   font-family: $base-font-family;
-  line-height: $base-line-height * 1.125;
+  line-height: $base-line-height;
 }
 
 a {

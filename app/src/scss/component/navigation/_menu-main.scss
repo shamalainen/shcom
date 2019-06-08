@@ -38,4 +38,12 @@
       width: 100%;
     }
   }
+
+  &.is-active {
+    color: $crimson;
+
+    &:after {
+      width: 100%;
+    }
+  }
 }

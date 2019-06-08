@@ -1,0 +1,11 @@
+.section {
+  padding-top: $gutter * 5;
+  padding-bottom: $gutter * 5;
+
+  &:first-child {
+    @media screen and (min-width: $bp-wide) {
+      padding-top: $gutter * 2.5;
+      padding-bottom: $gutter * 7.5;
+    }
+  }
+}

@@ -16,7 +16,7 @@
     </title>
   </head>
   <body>
-    <header id="start" class="header">
+    <header class="header" role="banner">
       <div class="header__content container container--inset">
         <h2 class="page-logo">
           <a href="/" class="page-logo__link">
@@ -32,7 +32,7 @@
           </a>
         </h2>
         <nav aria-label="Main Navigation">
-          <ul class="menu-main">
+          <ul class="menu-main" role="menu">
             <li class="menu-main__item">
               <a href="#start" class="menu-main__link">Start</a>
             </li>
@@ -49,10 +49,32 @@
         </nav>
       </div>
     </header>
+    <main role="main">
+      <section id="start" class="section">
+        <div class="section__content container container--inset">
+          <div class="introduction" aria-label="Introduction">
+            <div class="introduction__item">
+              <h1 class="introduction__heading">Sebastian</h1>
+              <p class="introduction__text">
+                Front-end Developer at Druid. Web Design and JS enthusiast, also
+                a so-called gym rat. He likes to play around with CSS.
+              </p>
+            </div>
+            <div class="introduction__item">
+              <img
+                src="./assets/images/me.jpg"
+                alt="picture of me :)"
+                class="introduction__image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer id="contact" class="footer">
       <div class="footer__content container container--inset">
         <nav aria-label="Footer Navigation">
-          <ul class="menu-footer">
+          <ul class="menu-footer" role="menu">
             <li class="menu-footer__item">
               <a href="mailto:contact@hamse.fi" class="menu-footer__link h1"
                 >E-mail</a

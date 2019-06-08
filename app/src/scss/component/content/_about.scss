@@ -1,7 +1,7 @@
 .about {
   padding: calc(#{$gutter} * 3) calc(#{$gutter} * 2);
   background-color: $white;
-  border-radius: 3px;
+  border: 1px solid $concrete;
 
   @media screen and (min-width: $bp-medium-wide) {
     display: flex;

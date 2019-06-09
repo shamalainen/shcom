@@ -1,0 +1,89 @@
+.workcase-list {
+  padding: 0;
+  list-style: none;
+}
+
+.workcase {
+  margin-bottom: $gutter * 2;
+  padding-bottom: $gutter * 2;
+  border-bottom: 1px solid $concrete;
+
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  @media screen and (min-width: $bp-wide) {
+    display: flex;
+    align-items: center;
+    margin-bottom: $gutter * 3;
+    padding-bottom: $gutter * 3;
+  }
+}
+
+.workcase__content {
+  width: 100%;
+}
+
+.workcase__image {
+  display: none;
+
+  @media screen and (min-width: $bp-wide) {
+    display: block;
+    width: 30%;
+    margin-right: $gutter * 2;
+  }
+}
+
+.workcase__heading {
+  font-family: $heebo;
+  text-transform: uppercase;
+}
+
+.workcase__description {
+  @include font-size(16px);
+
+  @media screen and (min-width: $bp-medium) {
+    @include font-size(18px);
+  }
+
+  @media screen and (min-width: $bp-wide) {
+    @include font-size(20px);
+  }
+}
+
+.workcase__stack {
+  @include font-size(10px);
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: $gutter;
+
+  @media screen and (min-width: $bp-medium) {
+    @include font-size(12px);
+  }
+
+  @media screen and (min-width: $bp-wide) {
+    @include font-size(14px);
+  }
+
+  p {
+    font-size: inherit;
+    margin: 0;
+  }
+}
+
+.stack {
+  padding: $gutter * 0.5;
+  border: 1px solid $concrete;
+  margin-right: $gutter * 0.5;
+  margin-bottom: $gutter * 0.5;
+  border-radius: 4px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

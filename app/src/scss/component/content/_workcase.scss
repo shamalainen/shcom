@@ -79,7 +79,7 @@
 }
 
 .stack {
-  padding: $gutter * 0.5;
+  padding: calc(#{$gutter} * 0.5) calc(#{$gutter} * 0.75);
   border: 1px solid $concrete;
   margin-right: $gutter * 0.5;
   margin-bottom: $gutter * 0.5;

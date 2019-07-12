@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/43085e2a-22a6-4950-8ab5-eb0b9575babf/deploy-status)](https://app.netlify.com/sites/lucid-babbage-8076bb/deploys)
+
 # Dev Boilerplate
 
 Dev Environment with a configured GULP setup.
